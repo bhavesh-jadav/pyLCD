@@ -392,7 +392,7 @@ class DisplayDraw:
 		if truetype:
 			image = Image.new('RGBA', size, (0, 0, 0, 0))
 			draw = ImageDraw.Draw(image)
-			draw.text((0, 0), text, (0, 0, 0), font = font)
+			draw.text((0, 0), text, (255, 255, 255), font = font)
 			image = image.crop(image.getbbox())
 			self.image(image, x, y, angle = angle, clear = clear)
 		else:
