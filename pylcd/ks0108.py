@@ -642,3 +642,10 @@ class DisplayDraw:
 					self.line(x, y, next_x, next_y)
 			else:
 				self.pixel(x, y)
+	
+	def clear(self, start_x, start_y, stop_x, stop_y):
+		x_range = range(start_x, stop_x + 1) if stop_x >= start_x else range(stop_x, start_x + 1)
+		y_range = range(start_y, stop_y + 1) if stop_y >= start_y else range(stop_y, start_y + 1)
+		for y in y_range:
+			for x in x_range:
+				self.pixel(x, y, clear = True)
