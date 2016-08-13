@@ -1,3 +1,7 @@
+####This repository contains some changes that are listed below.
+* Fixed DisplayDraw.text function when using truetype fonts.
+* Added new clear fuction in DisplayDraw class which clears only certain part of the screen.
+
 pyLCD – A library for controlling LCDs on various hardware backends
 ===================================================================
 The instructions and tips below are for HD44780 compatible character LCDs. Using KS0108 compatible graphical LCDs is basically the same, only with different pin names and function names.
